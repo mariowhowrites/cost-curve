@@ -1,0 +1,23 @@
+{
+  "name": "cost-curve",
+  "version": "1.0.0",
+  "description": "sandbox for calculating and plotting cost curve",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "chart.js": "2.7.2",
+    "polynomial": "1.4.3",
+    "react": "16.3.2",
+    "react-chartjs-2": "2.7.2",
+    "react-dom": "16.3.2",
+    "react-scripts": "1.1.4",
+    "regression": "2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
