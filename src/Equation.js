@@ -5,6 +5,12 @@ import { Line } from "react-chartjs-2";
 
 class Equation extends Component {
   render() {
+
+    // * redefine thresholds and prices to accomodate multiple price rules
+    // so, we'll come up with a polynomial by adding the polynomials from each price rule
+    // we'll use that polynomial to predict prices in a range from lowest dependent variable to highest dependent variable
+
+    // so, perhaps from 100 to 1000 sq ft, we'll take every 100 sq ft and calculate price based on combined cost polynomial
     const thresholds = this.state.costFactors.map(rule => rule[0]),
       prices = this.state.costFactors.map(rule => rule[1]);
 
